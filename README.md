@@ -66,10 +66,27 @@ brew install node
 
 ```
 
-##first branch   
+##09.gulp基本用法
+##### 全局安装gulp
 
-###分支修改后的操作
+```bash
+$ npm install --global gulp
+```
+##### 作为项目的开发依赖（devDependencies）安装：
+```bash
+$ npm install --save-dev gulp
+```
+##### 在项目根目录下创建一个名为 gulpfile.js 的文件：
+```bash
+$ var gulp = require('gulp');
 
+gulp.task('default', function() {
+  // 将你的默认的任务代码放在这
+});
+```
+##### 运行 gulp：
+```bash
+$ gulp
+```
     
     
-
